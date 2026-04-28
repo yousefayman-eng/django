@@ -1,0 +1,6 @@
+<h2>مرحباً بك في لوحة التحكم!</h2>
+<p>لقد قمت بتسجيل الدخول بنجاح.</p>
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">تسجيل الخروج</button>
+</form>
